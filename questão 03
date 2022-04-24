@@ -1,0 +1,29 @@
+def maximo(a, b):
+    if a > b:
+        maior = a
+        return maior
+    else:
+        maior = b
+        return maior
+
+def minimo(a, b):
+    if a < b:
+        menor = a
+        return menor
+    else:
+        menor = b
+        return menor
+
+def comparacao(a, b, c, d, e):
+    maior, menor = maximo(a, b), minimo(a, b)
+    maior, menor = maximo(maior, c), minimo(menor, c)
+    maior, menor = maximo(maior, d), minimo(menor, d)
+    maior, menor = maximo(maior, e), minimo(menor, e)
+    return f'O número {maior} é o maior e o número {menor} é o menor.'
+
+n1 = int(input('Informe o primeiro número: ').strip())
+n2 = int(input('Informe o segundo número: ').strip())
+n3 = int(input('Informe o terceiro número: ').strip())
+n4 = int(input('Informe o quarto número: ').strip())
+n5 = int(input('Informe o quinto número: ').strip())
+print(comparacao(n1, n2, n3, n4, n5))
