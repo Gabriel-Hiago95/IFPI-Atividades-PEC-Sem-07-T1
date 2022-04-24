@@ -1,0 +1,24 @@
+def media(a, b, c, d, e):
+    media = (a + b + c + d + e) / 5
+    if a > media:
+        print(f'{a:.2f} é maior que a média')
+    if b > media:
+        print(f'{b:.2f} é maior que a média')
+    if c > media:
+        print(f'{c:.2f} é maior que a média')
+    if d > media:
+        print(f'{d:.2f} é maior que a média')
+    if e > media:
+        print(f'{e:.2f} é maior que a média')
+    print(f'A média vale {media:.2f}')
+
+def main():
+    n1 = int(input('Entre com a 1ª nota: ').strip())
+    n2 = int(input('Entre com a 2ª nota: ').strip())
+    n3 = int(input('Entre com a 3ª nota: ').strip())
+    n4 = int(input('Entre com a 4ª nota: ').strip())
+    n5 = int(input('Entre com a 5ª nota: ').strip())
+    print(media(n1, n2, n3, n4, n5))
+
+if __name__ == '__main__':
+    main()
