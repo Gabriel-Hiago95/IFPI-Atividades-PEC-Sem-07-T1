@@ -1,8 +1,6 @@
-def idade(d_at, m_at, a_at, d_ns, m_ns, a_ns):
-    dia = abs(d_at - d_ns)
-    mes = abs(m_at - m_ns)
+def idade(a_at,a_ns):
     ano = a_at - a_ns
-    return f'Sua idade exata é de {ano} anos, {mes} meses e {dia} dias.'
+    return f'Sua idade exata é de {ano} anos.'
 
 def main():
     dia_at = int(input('Informe o dia atual: ').strip())
@@ -11,7 +9,7 @@ def main():
     dia_ns = int(input('Informe o seu dia de nascimento: ').strip())
     mes_ns = int(input('Informe o seu mês de nascimento: ').strip())
     ano_ns = int(input('Informe o seu ano de nascimento: ').strip())
-    id = idade(dia_at, mes_at, ano_at, dia_ns, mes_ns, ano_ns)
+    id = idade(ano_at,ano_ns)
     print(id)
 
 if __name__ == '__main__':
